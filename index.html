@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Caveat Brush", cursive;
+      }
+      .kr-font {
+        font-family: "Hi Melody", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex justify-center">
+      <div class="flex flex-col items-center bg-stone-500 w-96 h-full">
+        <div class="flex flex-col items-center text-stone-50 pt-8">
+          <p class="pb-8 text-5xl">Cats Flim</p>
+        </div>
+        <div
+          class="max-w-xs h-56 overflow-hidden relative group cursor-pointer"
+          id="btn1"
+        >
+          <img src="./img/gil1.jpeg" alt="gil1" />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rouned-lg rouned-lg"
+          >
+            <p
+              class="text-lg m-auto text-center bg-black rounded-full mx-10 kr-font"
+            >
+              발라당 길이
+            </p>
+          </div>
+        </div>
+        <div
+          class="max-w-xs h-56 overflow-hidden pt-5 relative group cursor-pointer"
+          id="btn2"
+        >
+          <img src="./img/tak.jpeg" alt="tak" />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <p
+              class="text-lg m-auto text-center bg-black rounded-full mx-10 kr-font"
+            >
+              얌전 탁이
+            </p>
+          </div>
+        </div>
+        <div
+          class="max-w-xs h-56 overflow-hidden pt-5 relative group cursor-pointer"
+          id="btn3"
+        >
+          <img src="./img/gil2.jpeg" alt="gil2" />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-opacity-50 text-white p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <p
+              class="text-lg m-auto text-center bg-black rounded-full mx-10 kr-font"
+            >
+              방해꾼 길이
+            </p>
+          </div>
+        </div>
+        <div class="max-w-xs h-56 pt-5 overflow-hidde cursor-pointer">
+          <iframe
+            class="w-80 h-full"
+            src="https://www.youtube.com/embed/xfb6HSvHfqU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex flex-col items-center text-stone-50 pt-8 m-0-auto">
+          <p class="pb-12 text-3xl">Happy Cats Time</p>
+          <p class="pb-4">2023.05.19</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", () => {
+      alert("첫 번째 사진입니다 :)");
+    });
+    const btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click", () => {
+      alert("두 번째 사진입니다 :)");
+    });
+    const btn3 = document.getElementById("btn3");
+    btn3.addEventListener("click", () => {
+      alert("세 번째 사진입니다 :)");
+    });
+  </script>
+</html>
